@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
+   let uri =  mongodb+srv://jmanpreet1000:XaBj8CuYb4gS51Rs@manpreet.8dpj7fr.mongodb.net/
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/imdb", {
+    await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
