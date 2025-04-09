@@ -2,10 +2,10 @@
 const cors = require('cors');
 const express = require('express');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
-const actorRoutes = require('./routes/actorRoutes');
-const authRoutes = require('./routes/authRoutes');
-const movieRoutes = require('./routes/movieRoutes'); 
+const connectDB = require('../config/db');
+const actorRoutes = require('../routes/actorRoutes');
+const authRoutes = require('../routes/authRoutes');
+const movieRoutes = require('../routes/movieRoutes'); 
 const path = require('path');
 
 dotenv.config();
